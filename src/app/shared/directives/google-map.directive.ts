@@ -14,8 +14,8 @@ import { GoogleMapsService } from '../services/google-map.service';
     selector: '[appGoogleMap]',
 })
 export class GoogleMapDirective implements OnInit, OnChanges {
-    @Input() postcode: string = '';
-    @Input() zoom: number = 15;
+    @Input() postcode = 'M201AQ';
+    @Input() zoom = 15;
 
     private map: any;
     private marker: any;
