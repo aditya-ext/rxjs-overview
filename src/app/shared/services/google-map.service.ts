@@ -107,7 +107,7 @@ export class GoogleMapsService {
    * @param postcode The UK postcode to center the map on
    * @param zoom The zoom level (1-20) for the map
    */
-  async createMap(elementId: string, postcode: string, zoom: number = 15): Promise<any> {
+  async createMap(elementId: string, postcode: string, zoom = 15): Promise<any> {
     try {
       // Load Google Maps if not already loaded
       const google = await this.loadGoogleMaps();
